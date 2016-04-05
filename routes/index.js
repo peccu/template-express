@@ -2,9 +2,16 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+// default parameter
+var defaultData = require('../lib/default');
+var response = {
+  title: 'Express Template',
+  error: {msg: ''}
+};
+
 router.get('/', function(req, res){
-  res.render('index', {title: 'Express'});
+  response.data = defaultData;
+  res.render('index', response);
 });
 
 module.exports = router;
