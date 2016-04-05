@@ -1,0 +1,8 @@
+* express template
+** Usage
+#+BEGIN_SRC shell-script
+  git clone https://github.com/peccu/template-express
+  cd template-express
+  npm i
+  DEBUG=template-express:* npm start
+#+END_SRC
