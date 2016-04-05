@@ -5,4 +5,6 @@
   cd template-express
   npm i
   DEBUG=template-express:* npm start
+  # or use node-dev
+  DEBUG=template-express:* node-dev ./bin/www
 #+END_SRC
